@@ -32,8 +32,7 @@ public class Cipher {
 
     public String toUpperString(String text)
     {
-        String upperText = text.toUpperCase();
-        return upperText;
+        return text.toUpperCase();
     }
 
     public String decrypt(String encryptedText, String key)
