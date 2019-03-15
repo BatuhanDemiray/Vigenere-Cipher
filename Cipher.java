@@ -4,10 +4,8 @@ public class Cipher {
 
     public String encrypt(String originalText, String key)
     {
-        char[] textChar = new char[50];
-        textChar = originalText.toCharArray();
-        char[] keyChar = new char[50];
-        keyChar = key.toCharArray();
+        char[] textChar = originalText.toCharArray();
+        char[] keyChar = key.toCharArray();
 
         int i,j;
         int originalText_length = originalText.length();
@@ -29,7 +27,6 @@ public class Cipher {
             encrypted[i] = (char) (((textChar[i] + newKey[i]) % 26 + 1) + 'A');
         }
         System.out.println("Orijinal Mesaj: " + String.valueOf(encrypted));
-        //return String.valueOf(encrypted);
         return originalText;
     }
 
